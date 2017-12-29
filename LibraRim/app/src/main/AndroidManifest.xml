@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.hs.emirim.bbong0722.librarim">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="라이브러林"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:largeHeap ="true"
+        >
+        <activity
+            android:name="kr.hs.emirim.bbong0722.librarim.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kr.hs.emirim.bbong0722.librarim.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="kr.hs.emirim.bbong0722.librarim.BookListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="kr.hs.emirim.bbong0722.librarim.BookInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="kr.hs.emirim.bbong0722.librarim.SettingsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="kr.hs.emirim.bbong0722.librarim.ServiceInfoActivity">
+            <intent-filter>
+                <action android:name="android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
